@@ -1,0 +1,170 @@
+
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hubungi Saya - Portofolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="nav-container">
+            <a href="index.html" class="brand">
+                <span class="brand-mark">P</span>
+                <span>PORTOFOLIO<span class="brand-dot">.</span></span>
+            </a>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="project.html">Proyek</a></li>
+                    <li><a href="kontak.html" class="active">Hubungi Saya</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="hero-content">
+                <span class="eyebrow">TERHUBUNG DENGAN SAYA</span>
+
+                <h1>Mari Mulai <span class="text-gradient">Percakapan.</span></h1>
+
+                <p class="hero-description">
+                    Punya pertanyaan, ide proyek, atau ingin berkolaborasi?
+                    Silakan kirim pesan melalui formulir di bawah ini.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#form-kontak" class="btn btn-primary">Kirim Pesan</a>
+                    <a href="project.html" class="btn btn-secondary">Lihat Proyek</a>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="code-window">
+                    <div class="code-window-header">
+                        <div class="window-dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <span>contact.js</span>
+                    </div>
+
+                    <div class="code-window-body">
+                        <p><span class="code-purple">function</span> <span class="code-blue">connect</span>() {</p>
+                        <p class="code-indent"><span class="code-purple">return</span> {</p>
+                        <p class="code-indent code-indent-2"><span class="code-blue">message</span>: <span class="code-green">"Let's collaborate!"</span>,</p>
+                        <p class="code-indent code-indent-2"><span class="code-blue">status</span>: <span class="code-green">"Open to ideas"</span></p>
+                        <p class="code-indent">};</p>
+                        <p>}</p>
+                        <p class="code-comment">// Ide bagus dimulai dari komunikasi.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="form-section" id="form-kontak">
+            <div class="section-intro">
+                <span class="eyebrow">FORMULIR KONTAK</span>
+                <h2>Kirim Pesan</h2>
+                <p>Isi informasi berikut agar saya dapat memahami pesan yang ingin disampaikan.</p>
+            </div>
+
+            <div class="contact-form-container">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="nama">Nama Lengkap</label>
+                        <input
+                            type="text"
+                            id="nama"
+                            name="nama"
+                            placeholder="Masukkan nama kamu"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Alamat Email</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="nama@email.com"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subjek">Subjek</label>
+                        <input
+                            type="text"
+                            id="subjek"
+                            name="subjek"
+                            placeholder="Topik pesan kamu"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pesan">Pesan</label>
+                        <textarea
+                            id="pesan"
+                            name="pesan"
+                            rows="6"
+                            placeholder="Tulis pesan kamu di sini..."
+                            required
+                        ></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+
+                    <p class="form-note">
+                        Catatan: formulir ini masih berupa tampilan front-end.
+                        Pesan belum terkirim ke email sebelum dihubungkan dengan layanan backend.
+                    </p>
+                </form>
+            </div>
+        </section>
+
+        <section class="contact-cta">
+            <div>
+                <span class="eyebrow">JELAJAHI LEBIH LANJUT</span>
+                <h2>Lihat Karya Saya</h2>
+                <p>Kenali beberapa proyek yang pernah saya kerjakan.</p>
+            </div>
+
+            <a href="project.html" class="btn btn-primary">Lihat Proyek</a>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Portofolio Mahasiswa. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        const contactForm = document.getElementById("contactForm");
+
+        contactForm.addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            alert("Terima kasih! Formulir berhasil divalidasi, tetapi pesan belum dikirim ke email.");
+
+            contactForm.reset();
+        });
+    </script>
+
+</body>
+</html>
