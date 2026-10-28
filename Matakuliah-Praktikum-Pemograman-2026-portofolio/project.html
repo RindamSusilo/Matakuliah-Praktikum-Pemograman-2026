@@ -1,0 +1,303 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portofolio proyek dan karya digital saya.">
+    <title>Proyek Saya | Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <header class="site-header">
+        <div class="nav-container">
+            <a href="index.html" class="brand">
+                <span class="brand-mark">P.</span>
+                <span>PORTOFOLIO<span class="brand-dot">.</span></span>
+            </a>
+
+            <nav aria-label="Navigasi utama">
+                <ul>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="resume.html">Tentang Saya</a></li>
+                    <li><a href="project.html" class="active">Proyek</a></li>
+                    <li><a href="kontak.html">Kontak</a></li>
+                </ul>
+            </nav>
+
+            <a href="kontak.html" class="nav-cta">Hubungi Saya ↗</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO -->
+        <section class="hero-section">
+            <div class="hero-content">
+                <span class="eyebrow">
+                    <span class="eyebrow-dot"></span>
+                    PORTOFOLIO DIGITAL
+                </span>
+
+                <h1>
+                    Ide menjadi karya.<br>
+                    <span>Karya menjadi solusi.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Selamat datang di ruang karya saya. Di sini, saya
+                    mendokumentasikan proyek, eksplorasi teknologi, dan
+                    berbagai solusi digital yang saya kembangkan.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#daftar-proyek" class="btn-primary">
+                        Jelajahi Proyek <span>↘</span>
+                    </a>
+                    <a href="resume.html" class="btn-secondary">
+                        Kenali Saya
+                    </a>
+                </div>
+
+                <div class="hero-note">
+                    <span class="availability-dot"></span>
+                    Terus belajar, terus berkarya.
+                </div>
+            </div>
+
+            <div class="hero-visual" aria-label="Ilustrasi kode dan pengembangan digital">
+                <div class="visual-orbit orbit-one"></div>
+                <div class="visual-orbit orbit-two"></div>
+
+                <div class="code-window">
+                    <div class="window-top">
+                        <div class="window-dots">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <span class="window-label">my-project.js</span>
+                    </div>
+
+                    <div class="code-content">
+                        <p><span class="code-muted">01</span> <span class="code-purple">const</span> <span class="code-blue">project</span> = {</p>
+                        <p><span class="code-muted">02</span> &nbsp; name: <span class="code-green">"My Next Idea"</span>,</p>
+                        <p><span class="code-muted">03</span> &nbsp; creativity: <span class="code-orange">100</span>,</p>
+                        <p><span class="code-muted">04</span> &nbsp; learning: <span class="code-green">true</span>,</p>
+                        <p><span class="code-muted">05</span> &nbsp; status: <span class="code-green">"building"</span></p>
+                        <p><span class="code-muted">06</span> };</p>
+                        <p class="code-bottom"><span class="code-purple">return</span> <span class="code-blue">innovation</span>();<span class="cursor">▍</span></p>
+                    </div>
+                </div>
+
+                <div class="floating-card floating-card-top">
+                    <span class="floating-icon">✳</span>
+                    <div>
+                        <strong>Creative Thinking</strong>
+                        <small>Ideas into solutions</small>
+                    </div>
+                </div>
+
+                <div class="floating-card floating-card-bottom">
+                    <span class="floating-icon">⌘</span>
+                    <div>
+                        <strong>Build & Improve</strong>
+                        <small>One project at a time</small>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION INTRO -->
+        <section class="section-intro">
+            <div>
+                <span class="section-label">OVERVIEW</span>
+                <h2>Perjalanan dalam setiap proyek.</h2>
+            </div>
+
+            <p>
+                Setiap proyek adalah kesempatan untuk mencoba hal baru,
+                memecahkan masalah, dan mengembangkan kemampuan.
+            </p>
+        </section>
+
+        <!-- STATISTIK -->
+        <section id="statistik" class="statistics-section">
+            <article class="stat-card">
+                <div class="stat-top">
+                    <span class="stat-icon">▦</span>
+                    <span class="stat-caption">Seluruh karya</span>
+                </div>
+                <p>Total Proyek</p>
+                <h3 id="total-proyek">0</h3>
+            </article>
+
+            <article class="stat-card">
+                <div class="stat-top">
+                    <span class="stat-icon">◷</span>
+                    <span class="stat-caption">Sedang berjalan</span>
+                </div>
+                <p>Dalam Pengerjaan</p>
+                <h3 id="proyek-berjalan">0</h3>
+            </article>
+
+            <article class="stat-card">
+                <div class="stat-top">
+                    <span class="stat-icon">✓</span>
+                    <span class="stat-caption">Tuntas dikerjakan</span>
+                </div>
+                <p>Proyek Selesai</p>
+                <h3 id="proyek-selesai">0</h3>
+            </article>
+
+            <article class="stat-card budget-card">
+                <div class="stat-top">
+                    <span class="stat-icon">↗</span>
+                    <span class="stat-caption">Nilai perencanaan</span>
+                </div>
+                <p>Total Anggaran</p>
+                <h3 id="total-anggaran">Rp0</h3>
+            </article>
+        </section>
+
+        <!-- DAFTAR PROYEK -->
+        <section id="daftar-proyek" class="projects-section">
+            <div class="projects-heading">
+                <div>
+                    <span class="section-label">SELECTED WORKS</span>
+                    <h2>Karya pilihan<span class="brand-dot">.</span></h2>
+                    <p>Beberapa proyek yang menjadi bagian dari perjalanan saya.</p>
+                </div>
+
+                <div class="project-count">
+                    <span class="count-symbol">✳</span>
+                    Digital projects
+                </div>
+            </div>
+
+            <div class="search-bar">
+                <span class="search-icon">⌕</span>
+                <input
+                    type="text"
+                    id="search-proyek"
+                    placeholder="Cari proyek berdasarkan nama..."
+                    aria-label="Cari proyek berdasarkan nama"
+                >
+                <span class="search-hint">LIVE SEARCH</span>
+            </div>
+
+            <div id="project-list" class="project-grid"></div>
+
+            <div id="empty-message" class="empty-state" hidden>
+                <span class="empty-icon">⌕</span>
+                <h3>Proyek belum ditemukan</h3>
+                <p>Coba gunakan kata kunci lain untuk menemukan proyek.</p>
+            </div>
+        </section>
+
+        <!-- FORM TAMBAH PROYEK -->
+        <section id="form-proyek" class="form-section">
+            <div class="form-intro">
+                <span class="section-label">PROJECT MANAGEMENT</span>
+                <h2>Tambahkan karya baru<span class="brand-dot">.</span></h2>
+                <p>
+                    Catat proyek baru, tentukan kategorinya, dan pantau
+                    progres pengerjaannya melalui halaman ini.
+                </p>
+
+                <div class="form-benefit">
+                    <span>✓</span> Kelola daftar proyek
+                </div>
+                <div class="form-benefit">
+                    <span>✓</span> Pantau status pengerjaan
+                </div>
+                <div class="form-benefit">
+                    <span>✓</span> Perbarui statistik otomatis
+                </div>
+            </div>
+
+            <div class="form-panel">
+                <h3>Informasi Proyek</h3>
+                <p class="form-panel-subtitle">
+                    Lengkapi detail proyek di bawah ini.
+                </p>
+
+                <form id="project-form">
+                    <div class="form-field">
+                        <label for="judul">Nama Proyek</label>
+                        <input
+                            type="text"
+                            id="judul"
+                            name="judul"
+                            placeholder="Contoh: Sistem Informasi Sekolah"
+                        >
+                        <small id="judul-error" class="error"></small>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="kategori">Kategori Proyek</label>
+                        <select id="kategori" name="kategori">
+                            <option value="Web App">Web App</option>
+                            <option value="Mobile App">Mobile App</option>
+                            <option value="Desktop App">Desktop App</option>
+                            <option value="UI/UX Design">UI/UX Design</option>
+                        </select>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="anggaran">Estimasi Anggaran (Rp)</label>
+                        <input
+                            type="number"
+                            id="anggaran"
+                            name="anggaran"
+                            placeholder="Contoh: 2500000"
+                            min="1"
+                        >
+                        <small id="anggaran-error" class="error"></small>
+                    </div>
+
+                    <label class="checkbox-field" for="selesai">
+                        <input type="checkbox" id="selesai" name="selesai">
+                        <span class="custom-check"></span>
+                        <span>
+                            <strong>Proyek sudah selesai</strong>
+                            <small>Centang jika proyek telah diselesaikan.</small>
+                        </span>
+                    </label>
+
+                    <button type="submit" class="btn-primary submit-button">
+                        Tambahkan Proyek <span>↗</span>
+                    </button>
+
+                    <p id="form-message" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="contact-cta">
+            <div>
+                <span class="section-label">LET'S CONNECT</span>
+                <h2>Punya ide menarik untuk dikerjakan bersama?</h2>
+                <p>Mari berdiskusi dan menciptakan sesuatu yang bermanfaat.</p>
+            </div>
+
+            <a href="kontak.html" class="cta-button">
+                Mulai Percakapan <span>↗</span>
+            </a>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <a href="index.html" class="footer-brand">PORTOFOLIO<span class="brand-dot">.</span></a>
+        <p>Belajar, berkembang, dan menciptakan solusi melalui teknologi.</p>
+        <span>© 2026 · Personal Portfolio</span>
+    </footer>
+</body>
+</html>
